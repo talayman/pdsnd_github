@@ -1,4 +1,4 @@
-import time
+﻿import time
 import pandas as pd
 import numpy as np
 
@@ -130,7 +130,7 @@ def station_stats(df):
 
 
 def trip_duration_stats(df):
-    """Displays statistics on the total and average trip duration."""
+    """Displays statistics on the total and average trip duration for entered destinations."""
 
     print('\nCalculating Trip Duration...\n')
     start_time = time.time()
