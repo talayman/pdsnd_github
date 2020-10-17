@@ -1,4 +1,4 @@
-import time
+﻿import time
 import pandas as pd
 import numpy as np
 
@@ -62,7 +62,7 @@ def load_data(city, month, day):
     Returns:
         df - Pandas DataFrame containing city data filtered by month and day
     """
-    print("The data for city which you have chosen is loading")
+    print("The data for the city which you have chosen is loading. Please wait a sec")
     df=pd.read_csv(CITY_DATA[city])
 
     df['Start Time'] = pd.to_datetime(df['Start Time'])
@@ -130,7 +130,7 @@ def station_stats(df):
 
 
 def trip_duration_stats(df):
-    """Displays statistics on the total and average trip duration."""
+    """Displays statistics on the total and average trip duration for entered destinations."""
 
     print('\nCalculating Trip Duration...\n')
     start_time = time.time()
